@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    background: #fff;
+}
+
+#texto_box{
+    color: #fff;
+    margin: 12vh auto 8vh;
+    padding: 1rem 6rem;
+    width: 90%;
+    background: #006CA6;
+    border-radius: 2rem;
+    box-shadow: 1rem 8px 25px #6a6a6a;
+}
+
+p{
+    padding: 8px;
+}
+
+h1{
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+article h2{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+#secao_curiosidade{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao_curiosidade p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#autor_data{
+    padding: 2rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+article a{
+    color: #fff;
+    color: yellow;
+    text-decoration: none;
+}
+
+article a:hover{
+    color: yellow;
+    font-size: 20px;
+}
+
+.images_home .carrosel_home
