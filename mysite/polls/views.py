@@ -1,5 +1,5 @@
 from django.shortcuts import render
-import xmltodict
+
 
 def home_view(request):
     return render(request, 'polls/home.html')

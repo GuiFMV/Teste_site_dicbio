@@ -15,7 +15,6 @@
 
     <header>{% include "polls/navbar.html" %}</header>
 
-    <!-- Conteúdo principal -->
     <main>
         <div class="texto_box">
             <div class="autor_data">
@@ -27,7 +26,7 @@
             </div>
         </div>
 
-        <!-- Seção Resumo biográfico de Bernardo Santucci -->
+            <!-- Seção Resumo biográfico de Bernardo Santucci -->
         <div class="texto_box">
             <h2>Resumo biográfico de Bernardo Santucci</h2>
             <div class="autor_data">
@@ -38,10 +37,9 @@
                 Segundo o <a href="https://dicionario.ciuhct.org/santucci-bernardo/"> Dicionário de Cientistas, Engenheiros e Médicos em Portugal</a>, Bernardo Santucci, nascido por volta de 1701 em Cortona, no Grão-Ducado da Toscana, formou-se em Medicina pela Universidade de Bolonha e aprofundou o estudo de anatomia no Hospital de Santa Maria Nuova, em Florença. Seu desempenho o levou a ser nomeado médico da
                 princesa Violante Beatriz da Baviera, e em 1730, com cartas de recomendação dela, partiu para Lisboa. Logo ao chegar, foi nomeado médico anatômico do rei D. João V e, dois anos depois, tornou-se professor de anatomia no Hospital Real de Todos os Santos.
             </p>
-            
         </div>
 
-        <!-- Seção Brotero e a bananeira-->
+            <!-- Seção Brotero e a bananeira-->
         <div class="texto_box">
             <h2>Brotero e a bananeira: reflexões sobre o fazer científico no século XVIII</h2>
             <div class="autor_data">

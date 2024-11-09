@@ -7,6 +7,10 @@
     <title>NavBar</title>
 </head>
 <body>
+    <div>
+
+    </div>
+
     <div class="logo">
         <img src="{% static 'polls/images/dicbio_logo.svg' %}" width="80">
         <p>DicBio</p>
