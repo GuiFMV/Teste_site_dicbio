@@ -6,40 +6,27 @@
 }
 
 main{
-    margin: 6rem;
+    margin: 6rem 6rem 3rem;
 }
 
 .texto_box{
     color: #fff;
     margin: 2rem 0rem;
-    padding: 30rem;
-    width: 100%;
+    padding: 3rem;
+    width: 65%;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
-}
-
-p{
-    padding: 8px;
-}
-
-.autor_data h1{
-    font-weight: 800;
-    display: flex;
-    justify-content: center;
 }
 
 .texto_box h2{
     font-weight: 700;
     display: flex;
     justify-content: center;
-    padding-top: 15px;
 }
 
-.autor_data p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+p{
+    padding: 8px;
 }
 
 .autor_data{
@@ -51,6 +38,10 @@ p{
     font-weight: 500;
 }
 
+.autor_data h1{
+    font-weight: 800;
+}
+
 a{
     color: #fff;
     color: yellow;
@@ -60,4 +51,9 @@ a{
 a:hover{
     color: yellow;
     font-size: 20px;
+}
+
+
+.indent {
+    padding-left: 2em;
 }
