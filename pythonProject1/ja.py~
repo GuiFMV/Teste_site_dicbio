@@ -1,0 +1,10 @@
+import serial
+
+info = serial.Serial("COM8", 115200)
+
+with open('thermopar_test.txt', 'w') as arquivo:
+
+    while True:
+        data = info.readline().decode('utf-8').rstrip()
+        if data:
+            arquivo.write(data)
