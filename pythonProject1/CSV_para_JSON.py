@@ -6,7 +6,7 @@ def convert_csv_to_json(file_path):
     try:
         # Lê o arquivo CSV e converte para JSON
         data = pd.read_csv(file_path)
-        json_data = data.to_json(orient="records", indent=4)
+        json_data = data.to_json(orient="records", force_ascii=False, indent=4)  # force_ascii=False permite caracteres especiais
 
         # Abre um diálogo para escolher onde salvar o arquivo JSON
         save_path = filedialog.asksaveasfilename(defaultextension=".json", filetypes=[("JSON files", "*.json")])
