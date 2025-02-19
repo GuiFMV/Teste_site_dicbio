@@ -2,8 +2,14 @@ from django.shortcuts import render
 
 
 def home_view(request):
-    return render(request, 'polls/home.html')
-
+    images = [
+        'polls/images/brotero_img.svg',
+        'polls/images/conchas_img.svg',
+        'polls/images/flora_img.svg',
+        'polls/images/flora2_img.svg',
+        'polls/images/flora3_img.svg'
+    ]
+    return render(request, 'polls/home.html', {'images': images})
 
 def consulta_view(request):
     return render(request, 'polls/consulta.html')

@@ -1,39 +1,39 @@
 import json
 
-# Caminhos dos arquivos
-json1_path = 'JSONs/DadosDoDicionario.json'
-json2_path = 'JSONs/definitions.json'
-output_path = 'JSONs/resultado.json'
+# Carregar os arquivos JSON
+with open("JSONs/DataframePrincipal.json", "r", encoding="utf-8") as file1:
+    dataframe_principal = json.load(file1)
 
+with open("JSONs/resultado.json", "r", encoding="utf-8") as file2:
+    resultado = json.load(file2)
 
-def mesclar_jsons(json1_path, json2_path, output_path):
-    try:
-        # Ler os dois arquivos
-        with open(json1_path, 'r', encoding='utf-8') as f1:
-            dados_dicionario = json.load(f1)
+# Converter 'DataframePrincipal' em um dicionário baseado no 'sensenumber'
+dataframe_dict = {}
+for item in dataframe_principal:
+    sense_number = item.get("sensenumber")
+    if sense_number is not None:
+        dataframe_dict[sense_number] = item
 
-        with open(json2_path, 'r', encoding='utf-8') as f2:
-            definitions = json.load(f2)
+# Incorporar dados do 'DataframePrincipal' no 'resultado'
+resultado_atualizado = []
+for item in resultado:
+    definition_data = item.get('DefinitionData')
+    if definition_data and definition_data.get('SenseNumber') is not None:
+        sense_number = definition_data['SenseNumber']
+        if sense_number in dataframe_dict:
+            # Adicionar dados do DataframePrincipal
+            item['DataframePrincipal'] = dataframe_dict[sense_number]
+        else:
+            # Caso não haja correspondência, o campo será None
+            item['DataframePrincipal'] = None
+    else:
+        # Caso DefinitionData esteja ausente ou incompleto
+        item['DataframePrincipal'] = None
 
-        # Criar um dicionário para acesso rápido às definições por 'Headword'
-        definitions_dict = {item['Headword']: item for item in definitions}
+    resultado_atualizado.append(item)
 
-        # Mesclar os dados
-        for entrada in dados_dicionario:
-            headword = entrada.get('Headword')
-            if headword in definitions_dict:
-                entrada['DefinitionData'] = definitions_dict[headword]  # Adicionar a definição correspondente
-            else:
-                entrada['DefinitionData'] = None  # Nenhuma definição correspondente encontrada
+# Salvar o arquivo atualizado
+with open("JSONs/resultado_atualizado.json", "w", encoding="utf-8") as output_file:
+    json.dump(resultado_atualizado, output_file, ensure_ascii=False, indent=4)
 
-        # Salvar o resultado em um novo arquivo
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(dados_dicionario, f, ensure_ascii=False, indent=4)
-
-        print(f"Arquivo mesclado criado com sucesso: {output_path}")
-    except Exception as e:
-        print(f"Erro ao mesclar os arquivos: {e}")
-
-
-# Executar a função
-mesclar_jsons(json1_path, json2_path, output_path)
+print("Atualização concluída. Arquivo salvo como 'resultado_atualizado.json'.")
