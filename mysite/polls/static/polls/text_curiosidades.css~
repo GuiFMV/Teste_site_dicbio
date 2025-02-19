@@ -7,13 +7,16 @@
 
 main{
     margin: 6rem 6rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .texto_box{
     color: #fff;
-    margin: 2rem 0rem;
-    padding: 3rem;
-    width: 65%;
+    margin: 0 1rem 2rem 3rem;
+    padding: 1rem 3rem;
+    width: 50rem;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
@@ -56,4 +59,9 @@ a:hover{
 
 .indent {
     padding-left: 2em;
+}
+
+.texto_box img{
+    display:block;
+    
 }

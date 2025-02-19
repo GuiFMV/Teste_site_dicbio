@@ -5,11 +5,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-main{
-
-    padding: 1rem 6rem;
+main {
+    margin-top: 6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 }
 
 h1{
@@ -22,10 +22,6 @@ p{
     padding: 8px;
 }
 
-.container_texto_box{
-    margin: 2rem;
-}
-
 .texto_box h2{
     font-weight: 700;
     display: flex;
@@ -33,26 +29,22 @@ p{
     padding-top: 15px;
 }
 
-.texto_box{
+.texto_box {
     color: #fff;
-    margin: 3rem;
+    margin: 0 1rem 2rem 3rem;
     padding: 1rem 3rem;
-    width: auto;
+    width: 50rem;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
 }
 
 main .imagem_box_home{
-    margin: 5rem 4rem 1rem;
+    padding-top: 10px;
+    display: inline-flex;
+    flex-direction: column;
 }
 
-main .imagem_box_home div{
-    margin: 12px;
-    padding: 10px;
-    display: inline-flex;
-    justify-content: space-evenly;
-}
 
 #citacao_home{
     color: #fff;
@@ -72,6 +64,7 @@ main .imagem_box_home div{
     font-size: 18px;
 }
 
-main .images_home .carrosel_home{
-
+.logos_box_home{
+    display: flex;
+    justify-content: space-evenly;
 }
