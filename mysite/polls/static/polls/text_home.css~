@@ -39,12 +39,15 @@ p{
     box-shadow: 1rem 8px 25px #6a6a6a;
 }
 
+.texto_box li{
+    padding: 8px;
+}
+
 main .imagem_box_home{
     padding-top: 10px;
     display: inline-flex;
     flex-direction: column;
 }
-
 
 #citacao_home{
     color: #fff;

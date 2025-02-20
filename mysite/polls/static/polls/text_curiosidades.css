@@ -6,20 +6,25 @@
 }
 
 main{
-    margin: 6rem 6rem 3rem;
+    margin-top: 6rem;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .texto_box{
     color: #fff;
-    margin: 0 1rem 2rem 3rem;
-    padding: 1rem 3rem;
-    width: 50rem;
+    margin: 0rem 0rem 2rem 3rem;
+    padding: 2rem;
+    width: 100%;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
+}
+
+.container_text{
+    width: calc(100% - 30%); /* Ajusta para compensar o espaço do fixo */
+    margin-right: 30%; /* Mesma largura do container fixo */
 }
 
 .texto_box h2{
@@ -41,17 +46,21 @@ p{
     font-weight: 500;
 }
 
-.autor_data h1{
+h1{
     font-weight: 800;
+    text-align: center;
 }
-
-a{
+.texto_box #p_curiosidades{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.container_text a{
     color: #fff;
     color: yellow;
     text-decoration: none;
 }
 
-a:hover{
+.container_text a:hover{
     color: yellow;
     font-size: 20px;
 }
@@ -65,3 +74,42 @@ a:hover{
     display:block;
     margin:auto;
 }
+
+.texto_link_curiosidades{
+    margin-top: 1rem;
+    display: flex;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    flex-wrap: nowrap;
+    padding: 16px;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.texto_link_curiosidades a{
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    text-decoration: none;
+    color: #006CA6;
+}
+
+.texto_link_curiosidades a:hover {
+    background-color: #d3d3d3; /* Cinza um pouco escuro */
+    border-radius: 5px;
+    scroll-behavior: smooth;
+}
+
+.texto_link_curiosidades a:visited {
+    color: #006CA6; /* Mantém a cor original mesmo após o clique */
+}
+
+.container_fixed {
+    width: 30%; /* Define a largura fixa */
+    position: fixed;
+    right: 0;
+    top: 5rem; /* Alinha com o topo do main */
+    height: 100vh; /* Faz ocupar toda a altura da tela */
+    overflow-y: auto; /* Adiciona rolagem se o conteúdo for grande */
+    padding: 1rem;

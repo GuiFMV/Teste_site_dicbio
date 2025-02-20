@@ -12,6 +12,7 @@ def home_view(request):
     return render(request, 'polls/home.html', {'images': images})
 
 def consulta_view(request):
+
     return render(request, 'polls/consulta.html')
 
 

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-esquerda {
+    width: 20%;
+    height: 100vh;
+    color: #006CA6;
+    padding: 20px;
+    position: fixed;
+    left: 16px;
+    top: 5rem;
+    overflow-y: auto;
+}
+
+.container-meio {
+    width: 50%;
+    color: #fff;
+    margin: 0rem 0rem 2rem 3rem;
+    padding: 2rem;
+    width: 100%;
+    background: #006CA6;
+    border-radius: 2rem;
+    box-shadow: 1rem 8px 25px #6a6a6a;
+    margin-left: 20%;
+}
+
+.container-direita {
+    width: 30%;
+    color: #006CA6;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+}

@@ -47,7 +47,7 @@ p{
 
 .texto_box_doc{
     color: #fff;
-    margin: 1rem 0rem;
+    margin: 0rem 0rem 2rem 3rem;
     padding: 3rem;
     width: 100%;
     background: #006CA6;
@@ -89,7 +89,7 @@ p{
     width: 30%; /* Define a largura fixa */
     position: fixed;
     right: 0;
-    top: 6rem; /* Alinha com o topo do main */
+    top: 5rem; /* Alinha com o topo do main */
     height: 100vh; /* Faz ocupar toda a altura da tela */
     overflow-y: auto; /* Adiciona rolagem se o conteúdo for grande */
     padding: 1rem;

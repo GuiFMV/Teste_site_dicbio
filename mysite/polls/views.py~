@@ -3,11 +3,11 @@ from django.shortcuts import render
 
 def home_view(request):
     images = [
-        'images/polls/brotero_img.svg',
-        'images/polls/conchas_img.svg',
-        'images/polls/flora_img.svg',
-        'images/polls/flora2_img.svg',
-        'images/polls/flora3_img.svg'
+        'polls/images/brotero_img.svg',
+        'polls/images/conchas_img.svg',
+        'polls/images/flora_img.svg',
+        'polls/images/flora2_img.svg',
+        'polls/images/flora3_img.svg'
     ]
     return render(request, 'polls/home.html', {'images': images})
 

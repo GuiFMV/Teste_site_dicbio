@@ -39,6 +39,10 @@ p{
     box-shadow: 1rem 8px 25px #6a6a6a;
 }
 
+.texto_box li{
+    padding: 4px;
+}
+
 main .imagem_box_home{
     padding-top: 10px;
     display: inline-flex;
