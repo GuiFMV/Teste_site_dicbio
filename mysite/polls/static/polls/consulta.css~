@@ -17,7 +17,7 @@ main {
     max-height: 200px;
     overflow-y: hidden;
     color: #006CA6;
-    padding: 0px 20px 20px 20px;
+    padding: 6px 20px 20px 20px;
     position: fixed;
     left: 16px;
     top: 5rem;

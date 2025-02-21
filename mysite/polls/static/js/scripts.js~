@@ -1,0 +1,5 @@
+document.querySelectorAll(".headword").forEach(span => {
+    span.addEventListener("click", function() {
+        alert("Você clicou na headword: " + this.textContent);
+    });
+});

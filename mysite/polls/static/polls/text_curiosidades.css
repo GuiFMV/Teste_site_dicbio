@@ -50,10 +50,12 @@ h1{
     font-weight: 800;
     text-align: center;
 }
+
 .texto_box #p_curiosidades{
     text-align: center;
     padding-bottom: 2rem;
 }
+
 .container_text a{
     color: #fff;
     color: yellow;
