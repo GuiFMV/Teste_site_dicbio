@@ -1,28 +1,35 @@
 import xml.etree.ElementTree as ET
 
 # Carregar o arquivo XML
-# No meu caso, para encontrar o caminho do arquivo preciso passar o caminho completo da minha pasta e colocar duas
-# barras para entender que estou usando uma
-tree = ET.parse("C:\\Users\\Guila\\OneDrive\\Documentos\\dicbio\\data\\compendio1brotero.xml")  # Substitua pelo caminho correto
+tree = ET.parse("C:\\Users\\Guila\\OneDrive\\Documentos\\dicbio-TEI-XML\\data\\compendio1brotero.xml")
 root = tree.getroot()
 
-# for element in root.iter(): # Para teste
-#     print(element.tag, element.attrib)
+# Namespace TEI
+ns = {'tei': 'http://www.tei-c.org/ns/1.0'}
 
-# Encontrar o elemento <body>
-body_element = root.find("body") # Escolha o elemento desejado front, body ou back
+# Buscar todas as tags <p>
+p_elements = root
+print(p_elements)
 
-# Função para extrair todo texto dentro de um elemento
+# Função para extrair texto com as tags
+def extrair_texto_com_tags(elemento):
+    if elemento is None:
+        return ""
+
+    resultado = []
+
+    for elem in elemento.iter():
+        tag_aberta = f"<{elem.tag.split('}')[-1]}>"  # Remove o namespace
+        tag_fechada = f"</{elem.tag.split('}')[-1]}>"
+
+        texto_antes = elem.text.strip() if elem.text else ""
+        texto_depois = elem.tail.strip() if elem.tail else ""
+
+        resultado.append(f"{tag_aberta}{texto_antes}{tag_fechada} {texto_depois}")
+
+    return " ".join(resultado)
 
 
-def extract_text(element):
-    text = element.text or ""
-    for sub_element in element:
-        text += extract_text(sub_element) + (sub_element.tail or "")
-    return text
-
-# Obter e imprimir o texto dentro de <body>
-
-
-body_text = extract_text(body_element)
-print(body_text)
+# Processar e exibir todos os parágrafos
+for p_element in p_elements:
+    print(extrair_texto_com_tags(p_element))

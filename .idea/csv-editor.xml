@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="C:\Users\Guila\OneDrive\Documentos\dicbio\data\DataframePrincipal.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\mysite\polls\data\polls\csv_data\DadosDoDicionario.csv">
           <value>
             <Attribute>
