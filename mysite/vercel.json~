@@ -4,10 +4,6 @@
     {
       "src": "mysite/mysite/wsgi.py",
       "use": "@vercel/python"
-    },
-    {
-      "src": "requirements.txt",
-      "use": "@vercel/static-build"
     }
   ],
   "routes": [
