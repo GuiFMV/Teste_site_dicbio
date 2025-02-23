@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-esquerda {
+    width: 16%;
+    max-height: 200px;
+    overflow-y: hidden;
+    color: #006CA6;
+    padding: 0px 20px 20px 20px;
+    position: fixed;
+    left: 16px;
+    top: 5rem;
+    margin-top: 10px;
+}
+
+.container-esquerda:hover{
+    overflow-y: scroll;
+}
+
+
+.container-esquerda ul{
+    list-style: none;
+    padding: 4px;
+    color: #006CA6;
+    margin-top: 42px;
+}
+
+.container-esquerda ul li{
+    margin-bottom: 10px;
+}
+
+.container-esquerda #palavras{
+    position: fixed;
+    padding: 5px 15px 1px 10px;
+    background: #fff;
+}
+
+/* Estiliza a barra de rolagem no Chrome, Edge e Safari */
+.container-esquerda::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+.container-esquerda::-webkit-scrollbar-thumb {
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.container-esquerda::-webkit-scrollbar-track { /* Cor do trilho da barra de rolagem */
+    border-radius: 10px;
+}
+
+/* Para Firefox */
+.container-esquerda {
+    scrollbar-width: thin; /* Deixa a barra mais fina */
+}
+
+.headword {
+    font-weight: bold;
+    color: #006CA6;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block; /* Faz a headword ocupar toda a largura disponível */
+    padding: 5px; /* Espaçamento interno para um visual mais limpo */
+}
+
+.headword:hover {
+    background-color: #d3d3d3; /* Cinza um pouco escuro */
+    border-radius: 5px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.container-meio {
+    width: 50%;
+    color: #fff;
+    margin: 0rem 0rem 2rem 3rem;
+    padding: 2rem;
+    width: 100%;
+    background: #006CA6;
+    border-radius: 2rem;
+    box-shadow: 1rem 8px 25px #6a6a6a;
+    margin-left: 20%;
+}
+
+.container-direita {
+    width: 30%;
+    color: #006CA6;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 1rem;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+}
+
