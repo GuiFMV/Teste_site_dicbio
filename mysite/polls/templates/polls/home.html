@@ -64,64 +64,28 @@
                 <p>O <em>template</em> deste dicionário baseia-se em LUGLI, L. et al. 2019-2022. <a href="https://mangalamresearch.shinyapps.io/VisualDictionaryOfBuddhistSanskrit/">A Visual Dictionary and Thesaurus of Buddhist Sanskrit</a>. Quaisquer dicionários que reutilizarem esse <em>template Shiny</em> devem citar L. et al. 2019-2022 como parte do código-fonte, e estarem cientes de que este dicionário e seu código são licenciados sob uma licença internacional <code>Creative Commons Share Alike 4</code>.</p>
             </div>
         </div>
-        <div class="imagem_box_home">
-            <div class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <img src="{% static 'polls/images/brotero_img.svg' %}" alt="Imagem 1" width="250">
-                            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <img src="{% static 'polls/images/conchas_img.svg' %}" alt="Imagem 2" width="320">
-                        </div>
-                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <img src="{% static 'polls/images/flora_img.svg' %}" alt="Imagem 3" width="320">
-                        </div>
-                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <img src="{% static 'polls/images/flora3_img.svg' %}" alt="Imagem 4" width="300">
-                        </div>
-                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                    </ol>
-                </aside>
-            </div>
 
-            <div class="logos_box_home">
-                <img src="{% static 'polls/images/cnpq_logo.svg' %}" width="100">
-                <img src="{% static 'polls/images/ufgd_logo.svg' %}" width="100">
+        <div class="imagens_direita">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="{% static 'polls/images/Félix_de_Avelar_Brotero01.jpg' %}" alt="Imagem 1">
+                    <img src="{% static 'polls/images/img2.jpg' %}" alt="Imagem 2">
+                    <img src="{% static 'polls/images/img3.jpg' %}" alt="Imagem 3">
+                    <img src="{% static 'polls/images/VandelliTabXV.png' %}" alt="Imagem 4">
+                    <img src="{% static 'polls/images/img4.jpg' %}" alt="Imagem 5">
+                </div>
+                <div class="indicators">
+                    <div class="indicator active" onclick="moveToSlide(0)"></div>
+                    <div class="indicator" onclick="moveToSlide(1)"></div>
+                    <div class="indicator" onclick="moveToSlide(2)"></div>
+                    <div class="indicator" onclick="moveToSlide(3)"></div>
+                    <div class="indicator" onclick="moveToSlide(4)"></div>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>{% include "polls/footer.html" %}</footer>
-    <script src="{% static 'js/scroll_suave.js' %}"></script>
+    <script src="{% static 'js/carrossel.js' %}"></script>
 </body>
 </html>

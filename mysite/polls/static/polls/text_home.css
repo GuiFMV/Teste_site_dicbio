@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,66 +8,72 @@
 main {
     margin-top: 6rem;
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    padding: 0 4rem;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
-h1{
+h1 {
     font-weight: 800;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-p{
+p {
     padding: 8px;
 }
 
-.texto_box h2{
+.texto_box h2 {
     font-weight: 700;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-top: 15px;
 }
 
 .texto_box {
     color: #fff;
-    margin: 0 1rem 2rem 3rem;
-    padding: 1rem 3rem;
-    width: 50rem;
+    padding: 2rem;
+    width: 70%;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
+    margin-bottom: 16px;
 }
 
-.texto_box li{
+.texto_box li {
     padding: 4px;
 }
 
-main .imagem_box_home{
-    padding-top: 10px;
-    display: inline-flex;
-    flex-direction: column;
+.imagem_box_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    position: fixed;
+    right: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#citacao_home{
+
+#citacao_home {
     color: #fff;
     background: #006CA6;
     border-radius: 2rem;
     box-shadow: 1rem 8px 25px #6a6a6a;
 }
 
-.texto_box p a{
-    color: #fff;
+.texto_box p a {
     color: yellow;
     text-decoration: none;
 }
 
-.texto_box p a:hover{
+.texto_box p a:hover {
     color: yellow;
     font-size: 18px;
 }
 
-.logos_box_home{
+.logos_box_home {
     display: flex;
     justify-content: space-evenly;
 }
+
