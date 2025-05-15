@@ -3,7 +3,14 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\mysite\polls\data\polls\csv_data\DadosDoDicionario.csv">
+        <entry key="\mysite\polls\data\polls\csv_data\DataframePrincipal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\mysite\polls\data\polls\csv_data\DicionarioParaSite.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

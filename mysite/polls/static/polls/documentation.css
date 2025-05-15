@@ -18,13 +18,12 @@ main {
 }
 
 .container_text a{
-    color: #fff;
-    color: yellow;
+    color: #ffff7a;
     text-decoration: none;
 }
 
 .container_text a:hover{
-    color: yellow;
+    color: #ffff7a;
     font-size: 18px;
 }
 
@@ -93,4 +92,8 @@ p{
     height: 100vh; /* Faz ocupar toda a altura da tela */
     overflow-y: auto; /* Adiciona rolagem se o conteúdo for grande */
     padding: 1rem;
+}
+
+#strong_p{
+    color: #ffff7a;
 }
